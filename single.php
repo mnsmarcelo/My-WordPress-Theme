@@ -42,7 +42,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
             </div>         
             
              <div>
-            	<a href="https://marcelosousa.me/?meta=banner"><img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/marcelo-web-deceloper.jpg" title="Front end"/></a>
+            	<a href="https://marcelosousa.me/?meta=banner#page7"><img src="<?php bloginfo('template_url'); ?>/assets/marcelo-web-deceloper.jpg" title="Marcelo Sousa Web Developer"/></a>
             </div> 
 
             <div class="post__author">            

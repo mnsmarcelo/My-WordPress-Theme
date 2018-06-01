@@ -3,9 +3,9 @@
             <h3>About Me</h3>
             <div class="sidebar-widget__about-me">
               <div class="sidebar-widget__about-me-image">
-                <img src="<?php bloginfo('template_url'); ?>/assets/face.jpeg" alt="About Me">
+                <img src="<?php bloginfo('template_url'); ?>/assets/face.jpg" title="Marcelo Sousa Web Developer" alt="About Me">
               </div>
-              <p> Desenvolvedor, amante de livros, tecnologia, músicas, podcasts e de uma voltinha de bike aos domingos.</p>
+              <p>Profissional apaixonado por desenvolvimento web, desenvolve soluções front end com com React, Redux, CSS, SASS, Bootstrap e no back end com Java NodeJS.</p>
             </div>
           </div>
           <div class="sidebar-widget">
@@ -26,7 +26,7 @@
           </div>  
           <div class="sidebar-widget">
             <div class="sidebar-widget__banner">
-            <a href="https://marcelosousa.me/?meta=banner" title="Desenvolvedor Web"><img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/marcelo-web-developer-lateral.jpg" alt="Banner"></a>
+            <a href="https://marcelosousa.me/?meta=banner#page7" title="Marcelo Sousa Web Developer"><img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/marcelo-web-developer-lateral.jpg" title="Marcelo Sousa Web Developer" alt="Banner"></a>
             </div>
           </div>
           <div class="sidebar-widget">
