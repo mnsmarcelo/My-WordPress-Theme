@@ -5,14 +5,14 @@
               <div class="sidebar-widget__about-me-image">
                 <img src="<?php bloginfo('template_url'); ?>/assets/face.jpg" title="Marcelo Sousa Web Developer" alt="About Me">
               </div>
-              <p>Profissional apaixonado por desenvolvimento web, desenvolve soluções front end com com React, Redux, CSS, SASS, Bootstrap e no back end com Java NodeJS.</p>
+              <p>Profissional apaixonado por desenvolvimento web, desenvolve soluções front end com com React, Redux, CSS, SASS, Bootstrap e no back end com Java e NodeJS.</p>
             </div>
           </div>
           <div class="sidebar-widget">
             <h3>Follow Me</h3>
             <div class="sidebar-widget__follow-me">
               <div class="sidebar-widget__follow-me-icons">
-                <a href="https://www.facebook.com/mns.marcelo" target="_blank">                 
+                <a href="https://www.facebook.com/mnsmarcelo" target="_blank">                 
                   <img src="<?php bloginfo('template_url'); ?>/assets/facebook_circle.svg" width="57" alt="">        
                 </a>              
                 <a href="https://www.linkedin.com/in/mnsmarcelo/" target="_blank">
@@ -63,17 +63,5 @@
             <div class="sidebar-widget__tag-cloud">
               <?php wp_tag_cloud( 'smallest=10&largest=25&number=40&orderby=count' ); ?>
             </div>
-          </div>
-          <div class="sidebar-widget">            
-            <div class="sidebar-widget__subscribe">
-              <p>Se inscreva para receber as novidades.</p>
-              <form action="https://blog.marcelosousa.me/wp-admin/admin-ajax.php?action=rm_rainmaker_add_lead" class="form-newsletter">
-                <input type="text" name="rmfpx_email" placeholder="Seu e-mail">
-                <input type="hidden" name="rmfpx_added" value="true" />             
-                <input type="hidden" name="rmfpx_rm_nonce_field" value="02b7f85622" />      
-                <input type="hidden" name="rmfpx_rm_form-id" value="91" />   
-                <input class="sidebar-widget__subscribe-submit" type="submit" value="Enviar">
-              </form>
-            </div>
-          </div>            
+          </div>                   
         </div>

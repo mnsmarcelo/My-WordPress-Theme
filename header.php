@@ -1,4 +1,7 @@
 <?php 
+//  https://static.marcelosousa.me/blog
+define("STATIC_BLOG_DNS", "https://static.marcelosousa.me/blog");
+define("STATIC_DNS", "https://static.marcelosousa.me"); 
 setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
 date_default_timezone_set('America/Sao_Paulo');
 ?>
@@ -8,14 +11,15 @@ date_default_timezone_set('America/Sao_Paulo');
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title><?php wp_title(''); ?></title>
-	<link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/assets/favicon.png">
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/assets/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_url'); ?>/assets/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_url'); ?>/assets/apple-touch-icon-114x114.png">
+   <link rel="shortcut icon" href="<?php echo STATIC_DNS; ?>/assets/img/logo/favicon.png">
+	<link rel="apple-touch-icon" sizes="48x48" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-48x48.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-96x96.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-144x144.png">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<link href="<?php bloginfo('template_url'); ?>/assets/bootstrap.css" rel="stylesheet"> 
-  <link href="<?php bloginfo('template_url'); ?>/assets/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+	<link href="<?php echo STATIC_BLOG_DNS; ?>/assets/bootstrap.css" rel="stylesheet" > 
+  <link href="<?php echo STATIC_BLOG_DNS; ?>/assets/style.css" rel="stylesheet">
+   
 	
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55689c0e0ef2bfe0"></script>
@@ -38,22 +42,13 @@ date_default_timezone_set('America/Sao_Paulo');
   js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=144413789578797&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:760830,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 	<?php wp_head(); ?>
-<meta property="og:image" content="https://blog.marcelosousa.me/wp-content/uploads/2018/02/intro-site.jpg" />
-<meta property="og:image:secure_url" content="https://blog.marcelosousa.me/wp-content/uploads/2018/02/intro-site.jpg" />
-<meta property="og:image:width" content="484" />
-<meta property="og:image:height" content="252" />
-<meta property="fb:app_id" content="144413789578797" />
+	<meta property="og:site_name" content="Marcelo Sousa" />       
+	<meta property="og:image" content="<?php echo STATIC_DNS; ?>/assets/img/bg/marcelo-sousa-webdeveloper.jpg" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="627" />
+	<meta property="fb:app_id" content="144413789578797" />
   </head>
   <body>
     <svg style="display: none;">
@@ -120,7 +115,7 @@ date_default_timezone_set('America/Sao_Paulo');
       </symbol>
     </svg>
     <header class="header">
-    <nav class="nav">
+    <nav class="nav navbar-fixed-top">
     <div class="nav__container  container">
       <ul class="nav__list">
         <li class="nav__item">
@@ -140,13 +135,11 @@ date_default_timezone_set('America/Sao_Paulo');
           </ul>
         </li>     
         <li class="nav__item">
-          <a href="https://marcelosousa.me/?meta=banner">About</a>
+          <a href="https://marcelosousa.me/?meta=banner">Meus Serviços</a>
         </li>       
       </ul>
       <div class="nav__search  search">
-        <svg>
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
-        </svg>
+        Busca <i class="fa fa-search"></i>
       </div>
     </div>
   </nav>
@@ -157,7 +150,7 @@ date_default_timezone_set('America/Sao_Paulo');
       </div>
       <div class="col-md-12  header__logo">
         <div class="logo">
-          <h1><a class="logo__link" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?>.</a></h1>
+          <h1><a class="logo__link" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
           <div class="logo__description"><?php bloginfo('description'); ?></div>
         </div>
       </div>

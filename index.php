@@ -10,8 +10,7 @@
             <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('listPosts');   ?></a>            
           </div>
           <div class="col-sm-6  col-md-6  post__list-content">
-            <div class="post__info  post__info--date">
-              <span><?php the_time('d/M/Y') ?></span>          
+            <div class="post__info  post__info--date">             
               <span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span>    
             </div>
             

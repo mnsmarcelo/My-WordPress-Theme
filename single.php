@@ -44,27 +44,14 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
              <div>
             	<a href="https://marcelosousa.me/?meta=banner#page7"><img src="<?php bloginfo('template_url'); ?>/assets/marcelo-web-deceloper.jpg" title="Marcelo Sousa Web Developer"/></a>
             </div> 
-
-            <div class="post__author">            
-            <div class="sidebar-widget__subscribe">
-              <p>Se inscreva para receber as novidades.</p>
-              <form action="https://blog.marcelosousa.me/wp-admin/admin-ajax.php?action=rm_rainmaker_add_lead" class="form-newsletter">
-                <input type="text" name="rmfpx_email" placeholder="Seu e-mail">
-                <input type="hidden" name="rmfpx_added" value="true" />             
-                <input type="hidden" name="rmfpx_rm_nonce_field" value="02b7f85622" />      
-                <input type="hidden" name="rmfpx_rm_form-id" value="91" />   
-                <input class="sidebar-widget__subscribe-submit" type="submit" value="Inscrever">
-              </form>
-            </div>
-            </div>
             
             <div class="post__author">
               <div class="post__author-avatar">
                 <img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/foto-perfil-pequena.jpeg" title="Autor Marcelo Sousa" alt="Autor">
               </div>
               <div class="post__author-info">
-                <h5>Escrito por Marcelo Sousa</h5>
-                <p>Estudante de Analise de Sistemas e importado de Rondônia, com cinco anos atuando no  desenvolvimento de software para a web. Atualmente anda empolgado com o poder do ES6, PWA e estudando com afinco UX.</p>
+                <h5>por Marcelo Sousa</h5>
+                <p>Estudante de Analise de Sistemas e importado de Rondônia, com cinco anos atuando no  desenvolvimento de software para a web. Atualmente anda empolgado com o poder do ES6.</p>
                 <div class="post__author-info-social">
                   <a href="https://www.facebook.com/mns.marcelo" target="_blank">
                     <svg>
@@ -79,17 +66,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
                 </div>
               </div>
             </div>
-            
-            <div class="post__nav">
-       			<a class="post__nav-previous" href="<?php echo $prev; ?>">
-                <span class="post__nav-previous-link">Post Anterior</span>
-                <span><?php echo $prev_title; ?></span>
-              </a>
-              <a class="post__nav-next" href="<?php echo $next; ?>">
-                <span class="post__nav-next-link">Próximo Post</span>
-                <span><?php echo $next_title; ?></span>
-              </a> 
-            </div>          
+              
             <div class="post__related">
             <?php
               $tags = wp_get_post_tags($post->ID);
@@ -119,7 +96,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
             </div>
             
             <div class="post__comments">               
-            	<div class="fb-comments" data-href="https://blog.marcelosousa.me/?p=<?php the_ID(); ?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+            	<div class="fb-comments" data-href="<?php the_permalink() ?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
             </div>                
                      
             <?php endwhile; else: ?>
