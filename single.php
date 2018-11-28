@@ -12,9 +12,9 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
           <div class="post">
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="post__info  post__info--date">
+            <!--<div class="post__info  post__info--date">
               <span></span>
-            </div>
+            </div>-->
             <div class="post__title">
               <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
             </div>   
@@ -40,11 +40,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
              <h3>Compartilhe nas redes sociais</h3>
                <div class="addthis_inline_share_toolbox"></div>               
             </div>         
-            
-             <div>
-            	<a href="https://marcelosousa.me/?meta=banner#page7"><img src="<?php bloginfo('template_url'); ?>/assets/marcelo-web-deceloper.jpg" title="Marcelo Sousa Web Developer"/></a>
-            </div> 
-            
+                        
             <div class="post__author">
               <div class="post__author-avatar">
                 <img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/foto-perfil-pequena.jpeg" title="Autor Marcelo Sousa" alt="Autor">

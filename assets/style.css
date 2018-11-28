@@ -1352,13 +1352,15 @@ ul li, ol li {
     width:100%
 }
 .post__info,.post__title{
+	padding-top:15px;
     padding-left:10px;
     padding-right:10px;
     text-align:center;
 }
-.post__title h1,.post__title h2{
+.post__title h1,.post__title h2 {
     margin-top:0;
-    font-size:25px
+    font-size:25px;
+	font-family: elevate-display-font,medium-marketing-display-font,Georgia,Cambria,"Times New Roman",Times,serif!important;
 }
 .post__title a{
     color:#262626;
@@ -1410,8 +1412,21 @@ ul li, ol li {
     padding-right:10px;
     line-height:28px
 }
-.post__content p{
-    margin-bottom:20px
+.post__content p {
+    margin-bottom:20px;
+	font-size: 18px;
+	font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.post__content h2 {
+	font-size: 22px;	
+}
+@media all and (max-width:767px){
+	.post__content p{
+		font-size: 18px;
+	}
+	.post__content h2 {
+		font-size: 20px;
+	}
 }
 .post__content a,.post__content-more-link a{
     font-weight: 400;
@@ -2417,176 +2432,11 @@ ul li, ol li {
 	margin-bottom: 10px;
 }
 
-/* ouibounce */
-#ouibounce-modal {
-    font-family: 'Open Sans', sans-serif;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  #ouibounce-modal .underlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.8);
-    cursor: pointer;
-    -webkit-animation: fadein 0.5s;
-    animation: fadein 0.5s;
-  }
-  #ouibounce-modal .modal {
-    width: 600px;
-    height: 400px;
-    background: #f0f1f2 url(bg-popup-exit.jpg);    
-    z-index: 1;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    -webkit-animation: popin 0.3s;
-    animation: popin 0.3s;
-  }
-  #ouibounce-modal .modal-title {
-    font-size: 18px; 
-    padding: 10px;
-    margin: 0;
-    text-align: center;
-  }
-  #ouibounce-modal h3 {
-    color: #fff;
-    font-size: 1.5em;
-    margin: 0.2em;
-    font-weight: 500;
-  }
-  #ouibounce-modal .modal-body {
-    padding: 20px 35px;
-    font-size: 0.9em;
-  }
-  #ouibounce-modal p {
-    color: #344a5f;
-    line-height: 1.3em;
-  }
-  #ouibounce-modal form {
-    text-align: center;
-    margin-top: 35px;
-  }
-  #ouibounce-modal form input[type=email] {
-    padding: 12px;
-    font-size: 1em; 
-    border: 1px solid #ccc;
-    -webkit-font-smoothing: antialiased;
-  }
- 
-  #ouibounce-modal form p {
-    text-align: left;
-    margin-left: 35px;
-    opacity: 0.8;
-    margin-top: 1px;
-    padding-top: 1px;
-    font-size: 0.9em;
-  }
-  #ouibounce-modal .modal-footer {
-    position: absolute;
-    bottom: 20px;
-    text-align: center;
-    width: 100%;
-  }
-  #ouibounce-modal .modal-footer p {
-    color: #FFF;
-    cursor: pointer;
-    display: inline;
-    border-bottom: 1px solid #FFF;
-  }
-  @-webkit-keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  @-ms-keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes popin {
-    0% {
-      -webkit-transform: scale(0);
-      transform: scale(0);
-      opacity: 0;
-    }
-  
-    85% {
-      -webkit-transform: scale(1.05);
-      transform: scale(1.05);
-      opacity: 1;
-    }
-  
-    100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @-ms-keyframes popin {
-    0% {
-      -ms-transform: scale(0);
-      transform: scale(0);
-      opacity: 0;
-    }
-  
-    85% {
-      -ms-transform: scale(1.05);
-      transform: scale(1.05);
-      opacity: 1;
-    }
-  
-    100% {
-      -ms-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  @keyframes popin {
-    0% {
-      -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-      transform: scale(0);
-      opacity: 0;
-    }
-  
-    85% {
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05);
-      opacity: 1;
-    }
-  
-    100% {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
+.graf-dropCap {
+    font-family: elevate-display-font,medium-marketing-display-font,Georgia,Cambria,"Times New Roman",Times,serif!important;
+    font-style: normal!important;
+    font-weight: 500!important;
+    font-size: 66px;
+    padding-right: 7px;
+    padding-top: 11px;
+}

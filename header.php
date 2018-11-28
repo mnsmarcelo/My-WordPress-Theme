@@ -1,6 +1,7 @@
 <?php 
 //  https://static.marcelosousa.me/blog
-define("STATIC_BLOG_DNS", "https://static.marcelosousa.me/blog");
+// http://localhost/novo_blog/wp-content/themes/my-blog-wordpress-theme
+define("STATIC_BLOG_DNS", "http://localhost/novo_blog/wp-content/themes/my-blog-wordpress-theme");
 define("STATIC_DNS", "https://static.marcelosousa.me"); 
 setlocale(LC_ALL, "pt_BR", "pt_BR.iso-8859-1", "pt_BR.utf-8", "portuguese");
 date_default_timezone_set('America/Sao_Paulo');
@@ -133,10 +134,7 @@ date_default_timezone_set('America/Sao_Paulo');
                }             
             ?> 
           </ul>
-        </li>     
-        <li class="nav__item">
-          <a href="https://marcelosousa.me/?meta=banner">Meus Serviços</a>
-        </li>       
+        </li>  
       </ul>
       <div class="nav__search  search">
         Busca <i class="fa fa-search"></i>

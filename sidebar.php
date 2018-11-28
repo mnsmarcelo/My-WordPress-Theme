@@ -24,11 +24,11 @@
               </div>
             </div>
           </div>  
-          <div class="sidebar-widget">
+          <!--<div class="sidebar-widget">
             <div class="sidebar-widget__banner">
             <a href="https://marcelosousa.me/?meta=banner#page7" title="Marcelo Sousa Web Developer"><img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/marcelo-web-developer-lateral.jpg" title="Marcelo Sousa Web Developer" alt="Banner"></a>
             </div>
-          </div>
+          </div>-->
           <div class="sidebar-widget">
             <h3>Posts mais populares</h3>
             <div class="sidebar-widget__popular">
@@ -50,14 +50,13 @@
               <?php endwhile; wp_reset_postdata(); ?>
             </div>
           </div>	   
-          <div class="sidebar-widget">
+          <!--<div class="sidebar-widget">
             <h3>Instagram</h3>
-            <div class="sidebar-widget__instagram">      
-<!-- SnapWidget -->
+            <div class="sidebar-widget__instagram">  
 <iframe src="https://snapwidget.com/embed/496279" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:260px; height:390px"></iframe>
 
             </div>
-          </div>   
+          </div> -->  
           <div class="sidebar-widget">
             <h3>Tag Cloud</h3>
             <div class="sidebar-widget__tag-cloud">
