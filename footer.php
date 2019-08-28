@@ -6,10 +6,9 @@
 	<div class="footer-widgets bg-gray-dark ptb-100">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-md-offset-5 col-sm-12">
+				<div class="col-md-3 col-md-offset-9 col-sm-12">
 					<div class="footer-widgets__description">
-						<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/marcelo-sousa.png" title="Marcelo Sousa" alt="logo"></a>
-						<p>Desenvolvedor web, amante de livros, tecnologia, músicas, podcast e de uma voltinha de bike aos domingos.</p>
+						<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/marcelo-sousa.png" title="Marcelo Sousa" alt="logo"></a>						
 					</div>
 				</div> 	
 			</div>
@@ -28,11 +27,10 @@
 				</div>
 				<div class="col-md-4 col-md-push-4 col-sm-6">
 					<div class="footer-social-share text-right">
-						<ul>
-							<li><a href="https://www.facebook.com/mns.marcelo" target="_blanck"><i class="fa fa-facebook"></i></a></li>
+						<ul>				
 							<li><a href="https://www.linkedin.com/in/mnsmarcelo/" target="_blanck"><i class="fa fa-linkedin"></i></a></li>
-							<li><a href="https://www.youtube.com/channel/UCxa_M6ie5U5eAOrhMcAhO3g" target="_blanck"><i class="fa fa-youtube"></i></a></li>                                   
 							<li><a href="https://www.github.com/mnsmarcelo/" target="_blanck"><i class="fa fa-github"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCxa_M6ie5U5eAOrhMcAhO3g" target="_blanck"><i class="fa fa-youtube"></i></a></li> 
 							<li><a href="https://www.instagram.com/mnsmarcelo/" target="_blanck"><i class="fa fa-instagram"></i></a></li>
 						</ul>
 					</div>

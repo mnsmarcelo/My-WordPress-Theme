@@ -9,14 +9,14 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
 <main>   
 <div class="container">
         <div class="col-md-8  col-lg-9">
-          <div class="post">
+          <div class="post post-single">
 
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <!--<div class="post__info  post__info--date">
               <span></span>
             </div>-->
             <div class="post__title">
-              <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+              <h1><?php the_title(); ?></h1>
             </div>   
             <div class="post__info  post__info--category">
               <span><?php foreach((get_the_category()) as $category) { echo '<a href="/category/'.$category->slug.'">'.$category->cat_name . '</a> '; } ?></span>
@@ -35,12 +35,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
                   <?php the_tags( '', ', ', '<br />' ); ?>
               </div>
             </div>
-            
-            <div class="post__footer">
-             <h3>Compartilhe nas redes sociais</h3>
-               <div class="addthis_inline_share_toolbox"></div>               
-            </div>         
-                        
+
             <div class="post__author">
               <div class="post__author-avatar">
                 <img src="https://blog.marcelosousa.me/wp-content/uploads/2018/01/foto-perfil-pequena.jpeg" title="Autor Marcelo Sousa" alt="Autor">
@@ -49,16 +44,10 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
                 <h5>por Marcelo Sousa</h5>
                 <p>Estudante de Analise de Sistemas e importado de Rondônia, com cinco anos atuando no  desenvolvimento de software para a web. Atualmente anda empolgado com o poder do ES6.</p>
                 <div class="post__author-info-social">
-                  <a href="https://www.facebook.com/mns.marcelo" target="_blank">
-                    <svg>
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
-                    </svg>
-                  </a>                
-                  <a href="https://www.instagram.com/mnsmarcelo/" target="_blank">
-                    <svg>
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
-                    </svg>
-                  </a>
+                  <a href="https://www.linkedin.com/in/mnsmarcelo/" title="perfil no linkedin" target="_blank" rel="noopener"><i class="fa fa-linkedin"></i></a>
+									<a href="https://github.com/mnsmarcelo?tab=repositories" title="github" target="_blank" rel="noopener"><i class="fa fa-github"></i></a>												
+									<a href="https://www.youtube.com/c/MarceloSousa" title="canal no youtube" target="_blank" rel="noopener"><i class="fa fa-youtube"></i></a>										
+									<a href="https://www.instagram.com/mnsmarcelo/" title="perfil no instagram" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a>			
                 </div>
               </div>
             </div>
@@ -81,7 +70,6 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
                 <?php the_post_thumbnail('relatedPosts');   ?>
                   <h6><?php the_title(); ?></h6>
                 </a>
-                <span><?php the_time('d/M/Y') ?></span>
               </div>
               <?php
               endwhile;
@@ -89,11 +77,7 @@ $prev_title = get_the_title(get_adjacent_post(false,'',false));
               wp_reset_query();
               }
               ?>
-            </div>
-            
-            <div class="post__comments">               
-            	<div class="fb-comments" data-href="<?php the_permalink() ?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
-            </div>                
+            </div>      
                      
             <?php endwhile; else: ?>
                 <div class="artigo">

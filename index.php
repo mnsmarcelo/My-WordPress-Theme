@@ -4,7 +4,7 @@
     <div class="col-md-8  col-lg-9  container--list">
     <?php $countBanner = 0; if ( have_posts() ) : while ( have_posts() ) : the_post();?>               
 
-          <div class="post  post--list">
+          <div class="post post--list">
         <div class="row">
           <div class="col-sm-6  col-md-6  post__image">
             <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('listPosts');   ?></a>            
@@ -14,15 +14,12 @@
               <span><?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></span>    
             </div>
             
-            <div class="post__title">
-              <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+            <div class="list-post__title">
+              <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
             </div>
-            <div class="post__content">
-              <p><?php the_excerpt();  $countBanner++; ?></p>
-            </div>
-            <div class="post__content-more-link">
-              <a href="<?php the_permalink() ?>">Leia mais</a>
-            </div>
+            <div class="list-post__content">
+              <?php the_excerpt();  $countBanner++; ?>
+            </div>           
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 <?php 
-//  https://static.marcelosousa.me/blog
+//  https://static1.marcelosousa.me/blog
 // http://localhost/novo_blog/wp-content/themes/my-blog-wordpress-theme
 define("STATIC_BLOG_DNS", "http://localhost/novo_blog/wp-content/themes/my-blog-wordpress-theme");
 define("STATIC_DNS", "https://static.marcelosousa.me"); 
@@ -16,15 +16,12 @@ date_default_timezone_set('America/Sao_Paulo');
 	<link rel="apple-touch-icon" sizes="48x48" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-48x48.png">
 	<link rel="apple-touch-icon" sizes="96x96" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-96x96.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo STATIC_DNS; ?>/assets/img/logo/app-icon-144x144.png">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
 	<link href="<?php echo STATIC_BLOG_DNS; ?>/assets/bootstrap.css" rel="stylesheet" > 
-  <link href="<?php echo STATIC_BLOG_DNS; ?>/assets/style.css" rel="stylesheet">
-   
-	
-	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55689c0e0ef2bfe0"></script>
-  
+  <link href="<?php echo STATIC_BLOG_DNS; ?>/assets/style.css" rel="stylesheet">   
+	  
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112674378-1"></script>
     <script>
@@ -34,15 +31,6 @@ date_default_timezone_set('America/Sao_Paulo');
 
     gtag('config', 'UA-112674378-1');
     </script>
-    <div id="fb-root"></div>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.11&appId=144413789578797&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 	<?php wp_head(); ?>
 	<meta property="og:site_name" content="Marcelo Sousa" />       

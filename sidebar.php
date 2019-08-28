@@ -1,11 +1,10 @@
 <div class="col-md-4  col-lg-3">
           <div class="sidebar-widget">
-            <h3>About Me</h3>
             <div class="sidebar-widget__about-me">
               <div class="sidebar-widget__about-me-image">
-                <img src="<?php bloginfo('template_url'); ?>/assets/face.jpg" title="Marcelo Sousa Web Developer" alt="About Me">
+                <img src="<?php bloginfo('template_url'); ?>/assets/marcelo-sousa-front-end.jpg" title="Marcelo Sousa Front end Web Developer" alt="Sobre Mim">
               </div>
-              <p>Profissional apaixonado por desenvolvimento web, desenvolve soluções front end com com React, Redux, CSS, SASS, Bootstrap e no back end com Java e NodeJS.</p>
+              <p>Apaixonado por desenvolvimento web, desenvolve soluções front end com com React, Redux, CSS, SASS e Bootstrap.</p>
             </div>
           </div>
           <div class="sidebar-widget">
@@ -41,9 +40,6 @@
                   <div class="sidebar-widget__popular-item-info">
                     <div class="sidebar-widget__popular-item-content">
                       <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </div>
-                    <div class="sidebar-widget__popular-item-date">
-                      <span><?php the_time('d/M/Y') ?></span>
                     </div>
                   </div>
                 </div>
